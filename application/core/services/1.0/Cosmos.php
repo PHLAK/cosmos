@@ -23,7 +23,8 @@ class Cosmos
 			'test_service_provider',
 			'calculator',
 		    'debug',
-		    'custom_urls'
+		    'custom_urls',
+            'pulsar-1.0.0'
 		);
 	}
 

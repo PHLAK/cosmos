@@ -1,0 +1,706 @@
+/* ---------------------------------- */
+/* -----| RESET.CSS |---------------- */
+/* ---------------------------------- */
+
+/* http://developer.yahoo.com/yui/reset/ */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* ---------------------------------- */
+/* -----| BASE.CSS |----------------- */
+/* ---------------------------------- */
+
+/* http://developer.yahoo.com/yui/base/ */
+
+/* base.css, part of YUI's CSS Foundation */
+h1 {
+	/*18px via YUI Fonts CSS foundation*/
+	font-size:138.5%;  
+}
+h2 {
+	/*16px via YUI Fonts CSS foundation*/
+	font-size:123.1%; 
+}
+h3 {
+	/*14px via YUI Fonts CSS foundation*/
+	font-size:108%;  
+}
+h1,h2,h3 {
+	/* top & bottom margin based on font size */
+	margin:1em 0;
+}
+h1,h2,h3,h4,h5,h6,strong {
+	/*bringing boldness back to headers and the strong element*/
+	font-weight:bold; 
+}
+abbr,acronym {
+	/*indicating to users that more info is available */
+	border-bottom:1px dotted #000;
+	cursor:help;
+} 
+em {
+	/*bringing italics back to the em element*/
+	font-style:italic;
+}
+blockquote,ul,ol,dl {
+	/*giving blockquotes and lists room to breath*/
+	margin:1em;
+}
+ol,ul,dl {
+	/*bringing lists on to the page with breathing room */
+	margin-left:2em;
+}
+ol li {
+	/*giving OL's LIs generated numbers*/
+	list-style: decimal outside;	
+}
+ul li {
+	/*giving UL's LIs generated disc markers*/
+	list-style: disc outside;
+}
+dl dd {
+	/*giving UL's LIs generated numbers*/
+	margin-left:1em;
+}
+th,td {
+	/*borders and padding to make the table readable*/
+	border:none;
+	padding:0;
+}
+th {
+	/*distinguishing table headers from data cells*/
+	font-weight:bold;
+	text-align:center;
+}
+caption {
+	/*coordinated marking to match cell's padding*/
+	margin-bottom:.5em;
+	/*centered so it doesn't blend in to other content*/
+	text-align:center;
+}
+p,fieldset,table {
+	/*so things don't run into each other*/
+	margin-bottom:1em;
+}
+
+/* ---------------------------------- */
+/* -----| GENERAL |------------------ */
+/* ---------------------------------- */
+
+html {
+	font-size: 100%;
+}
+
+body {
+	color: #333;
+	font-family: sans-serif, Verdana, Tahoma, Arial, Helvetica, Sans;
+	font-size: .9em;
+}
+
+a {
+	color: #00C;
+	text-decoration: underline;
+}
+
+a:hover {
+	/* NULL */
+}
+
+a:active {
+	outline: none;
+}
+
+#wrap, #footer{
+	min-width: 960px;
+}
+
+#titleBar, #searchBar, #navigationBar, #contentWrapper, #footerPadding {
+	padding: 0px 8px;
+}
+
+/* ---------------------------------- */
+/* -----| TITLE BAR |---------------- */
+/* ---------------------------------- */
+
+#titleBar {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+#storeTitle {
+	background: transparent url(/pulsar-temp/images/logo/cosmos-logo-green-36px.png) no-repeat left center;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 6px 0 6px 45px; 
+}
+
+#accountInfo {
+	font-size: .9em;
+}
+
+.logout {
+	background: transparent url(/pulsar-temp/images/icons/door_in.png) no-repeat left center;
+	padding-left: 21px;
+}
+
+/* ---------------------------------- */
+/* -----| SEARCH |------------------- */
+/* ---------------------------------- */
+
+#searchBar {
+	background-color: #CDF;
+	border-top: 1px solid #369;
+	border-bottom: 1px solid #369;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#searchTable {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0;
+}
+
+#searchTable #searchTitle {
+	font-weight: bold;
+	width: 1px;
+	padding-right: 5px;
+}
+
+#searchTable #searchSelect {
+	width: 1px;
+	padding: 0 5px;
+}
+
+#searchTable #searchBox {
+	padding-left: 5px;
+}
+
+#searchTable #searchButton {
+	padding-right: 5px;
+	width: 1px;
+}
+
+#searchTable #cartButton {
+	padding-left: 5px;
+	width: 1px;
+	text-align: right;
+}
+
+#categorySelect {
+	background: transparent url(/pulsar-temp/images/misc/search-gradient.png) repeat-x left -7px;
+	border: 1px solid #69C;
+	border-radius: 3px;
+	padding: 2px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+
+
+#categorySelect option {
+	background-color: #FFF; 
+}
+
+#siteSearch {
+	background: #FFF url(/pulsar-temp/images/misc/search-gradient.png) repeat-x left -7px;
+	border: 1px solid #69C;
+	padding: 3px;
+	width: 100%;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-box-sizing: border-box;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+}
+
+#searchGo {
+	background: #FC3 url(/pulsar-temp/images/misc/go_blue.png) no-repeat center center;
+	border: 1px solid #69C;
+	cursor: pointer;
+	display: block;
+	height: 24px;
+	margin-left: -1px;
+	padding: 1px;
+	position: relative;
+	width: 30px;
+	z-index: 1;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+}
+
+#searchGo:hover {
+	border: 1px solid #369;
+}
+
+
+/* ---------------------------------- */
+/* -----| TOP NAVIGATION |----------- */
+/* ---------------------------------- */
+
+#navigationBar {
+	background: #DEDEDE url("/pulsar-temp/images/silver-gradient.png") repeat-x left center;
+	border-bottom: 1px solid #C6C6C6;
+}
+
+#leftNavTitle {
+	background-color: #369;
+	color: #FFF;
+	float: left;
+	font-weight: bold;
+	margin-right: -200px;
+	margin-bottom: -1px;
+	padding: 7px;
+	width: 186px;
+	text-shadow: #333 1px 1px 3px;
+}
+
+#topNavigation {
+	border-left: 1px solid #C6C6C6;
+	border-right: 1px solid #FFF;
+	display: inline-block;
+	margin: 0 0 0 210px;
+}
+
+#topNavigation li {
+	display: block;
+	float: left;
+	list-style: none;
+}
+
+#topNavigation li a, #topNavigation li .topNavLink {
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #C6C6C6;
+	color: #333;
+	cursor: pointer;
+	display: block;
+	font-size: .8em;
+	padding: 7px 10px;
+	text-decoration: none;
+}
+
+#topNavigation li:hover a, #topNavigation li:hover .topNavLink {
+	background: #DEDEDE url("/pulsar-temp/images/gray-gradient.png") repeat-x left center;
+	border: none;
+	padding: 7px 11px;
+}
+
+#topNavigation li a .arrow, #topNavigation li .topNavLink .arrow {
+	background: transparent url(/pulsar-temp/images/misc/arrow_down_black.png) no-repeat right center;
+	color: #333;
+	padding-right: 14px;
+}
+
+
+/* ---------------------------------- */
+/* -----| DROPDOWN NAVIGATION |------ */
+/* ---------------------------------- */
+
+#topNavigation li .navDropdownList li a {
+	background: transparent none;
+	border: none;
+}
+
+#topNavigation .navDropdown {
+	position: relative;
+	z-index: 2;
+}
+
+#topNavigation .navDropdownList {
+	background-color: #FFF;
+	border: 1px solid #C6C6C6;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0 4px 8px #999;
+	left: -1px;
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	z-index: 1;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-box-shadow: 0 0 8px #999;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-box-shadow: 0 4px 8px #999;
+}
+
+.navDropdown:hover .navDropdownList {
+	display: block !important;
+}
+
+#topNavigation .navDropdownList li {
+	display: block;
+	float: none;
+	margin: 0;
+}
+
+#topNavigation li .navDropdownList li a {
+	white-space: nowrap;
+}
+
+#topNavigation .navDropdownList li:last-child a{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+}
+
+#topNavigation li .navDropdownList li a:hover {
+	background-color: #CDF;
+	border: none;
+	white-space: nowrap;
+}
+
+
+
+
+/* ---------------------------------- */
+/* -----| LEFT NAVIGATION |---------- */
+/* ---------------------------------- */
+
+#leftNavigation {
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 6px 6px 0;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-box-shadow: 2px 2px 3px #999;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-box-shadow: 2px 2px 3px #999;
+}
+
+#leftNavigation h2 {
+	font-size: .9em;
+	margin: 0 0 .5em;
+}
+
+.navList {
+	margin: 0 0 1em .75em;
+}
+
+.navList li {
+	list-style: none;
+	margin-bottom: .25em;
+}
+
+.navList li a {
+	font-size: .9em;
+	text-decoration: none;
+}
+
+#leftNavigation li a:hover {
+	text-decoration: underline;
+}
+
+
+/* ---------------------------------- */
+/* -----| CONTENT STRUCTURE |-------- */
+/* ---------------------------------- */
+
+.colmask {
+	clear: both;
+	float: left;
+	margin-bottom: 10px;
+	overflow: hidden;		/* This chops off any overhanging divs */
+	position: relative;		/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+	width: 100%;			/* Width of whole page */
+}
+
+.leftmenu .colright {
+	float: left;
+	width: 200%;
+	position: relative;
+	left: 200px;
+	background: #fff;
+}
+
+.leftmenu .col1wrap {
+	float: right;
+	width: 50%;
+	position:relative;
+	right: 200px;
+	padding-bottom: 1em;
+}
+
+.leftmenu .col1 {
+	margin: 0 0 0 210px;
+	position: relative;
+	right: 100%;
+	overflow: hidden;
+}
+
+.leftmenu .col2 {
+	float: left;
+	width: 200px;
+	position: relative;
+	right: 200px;
+}
+
+
+/* ---------------------------------- */
+/* -----| CONTENT |------------------ */
+/* ---------------------------------- */
+
+#contentWrapper h1 {
+	border-bottom: 2px solid #333;
+	margin: 10px 0;
+}
+
+#featuredPromo {
+	text-align: center;
+}
+
+
+/* ---------------------------------- */
+/* -----| FEATURED PRODUCTS |-------- */
+/* ---------------------------------- */
+
+#featuredProductsWrapper {
+	text-align: center;
+}
+
+#featuredProductList {
+	display: inline-block !important;
+	margin: 0 auto;
+}
+
+#featuredProductList .featuredProduct {
+	border: 1px solid #999;
+	display: inline-block;
+	list-style: none;
+	margin: 8px;
+	padding: 5px;
+	position: relative;
+	text-decoration: none;
+	width: 190px;
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 2px 2px 3px #999;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 3px #999;
+}
+
+.featuredProduct a {
+	text-decoration: none;
+}
+
+.featuredProduct a:hover .productName{
+	text-decoration: underline;
+}
+
+.featuredProduct .productLink {
+	color: #333;
+	display: block;
+	text-align: center;
+}
+
+.featuredProduct .productLink img {
+	display: inline-block;
+	margin-bottom: 5px;	
+}
+
+.featuredProduct .productName {
+	display: block;
+	font-size: .9em;
+	font-weight: bold;
+	height: 32px;
+	margin-bottom: 5px;
+}
+
+.featuredProduct .priceBox {
+	height: 24px;
+} 
+
+.featuredProduct .price {
+	color: #A00;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 3px 0 0;
+}
+
+.featuredProduct .viewOptions {
+	background: transparent url(/pulsar-temp/images/icons/bullet_go.png) no-repeat right center;
+	display: inline-block;
+	font-size: .8em;
+	margin: 4px 0;
+	padding-right: 18px;
+	text-decoration: underline;
+}
+
+.featuredProduct .viewOptions:hover {
+	text-decoration: underline;
+}
+
+
+/* ---------------------------------- */
+/* -----| BUTTONS |------------------ */
+/* ---------------------------------- */
+
+.button {
+	background: #CDF url(/pulsar-temp/images/green-gradient.png) repeat-x left -10px;
+	border: 1px solid #4A0;
+	border-radius: 2px;
+	color: #232323;
+	cursor: pointer;
+	display: inline-block;
+	font-size: .9em;
+	padding: 3px 5px;
+	text-decoration: none;
+	white-space: nowrap;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+.button:hover {
+	/* background-image: url(/pulsar-temp/images/light-blue-gradient.png); */
+	border: 1px solid #170;
+}
+
+.button.blue {
+	background: #CDF url(/pulsar-temp/images/light-blue-gradient.png) repeat-x left -10px;
+	border: 1px solid #69C;
+}
+
+.button .myCart {
+	background: transparent url(/pulsar-temp/images/icons/cart.png) no-repeat left center;
+	padding-left: 21px;
+}
+
+.button .addToCart {
+	background: transparent url(/pulsar-temp/images/icons/cart_add.png) no-repeat left center;
+	padding-left: 21px;
+}
+
+
+/* ---------------------------------- */
+/* -----| FOOTER |------------------- */
+/* ---------------------------------- */
+
+* {margin:0;padding:0;}
+
+html, body, #wrap {
+	height: 100%;
+}
+
+body > #wrap {
+	height: auto;
+	min-height: 100%;
+}
+
+#main {
+	padding-bottom: 30px;		/* Must be same height as the footer */
+}
+
+#footer {
+	background-color: #333;
+	color: #FFF;
+	clear: both;
+	height: 30px;
+	margin-top: -30px;			/* Negative value of footer height */
+}
+
+#footer .left, #footer .right {
+	font-size: .8em;
+	padding: 7px 0;
+}
+
+#footer a {
+	color: #FFF;
+}
+
+
+/* ---------------------------------- */
+/* -----| MISCELLANEOUS |------------ */
+/* ---------------------------------- */
+
+.left {
+	float: left;
+	width: auto;
+}
+
+.right {
+	float: right;
+	width: auto;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+div.hr {
+  background-color: #CCC;
+  border: 0;
+  height: 1px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+div.hr hr {
+  display: none;
+}
+
+.hidden {
+	display: none;
+}
+
+/* --- CLEAR FIX --- */
+
+.clearfix:after {
+	content: ".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+
+
+/**
+ *  Pulsar theme for Cosmos Commerce by, Chris Kankiewicz (www.ChrisKankiewicz.com)
+ *  ----------
+ *  Sticky Footer Solution by, Steve Hatcher (http://www.cssstickyfooter.com)
+ */

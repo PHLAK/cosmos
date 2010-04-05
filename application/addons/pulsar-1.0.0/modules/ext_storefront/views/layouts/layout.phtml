@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+    <title>Cosmos Demo Store</title>
+    <link rel="stylesheet" type="text/css" href="/pulsar-temp/css/style.css" />
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/pulsar-temp/css/ie7.css" /><![endif]-->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/pulsar-temp/js/pulsar.js"></script>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="main" class="clearfix">
+
+            <div id="titleBar" class="clearfix">
+                <div id="storeTitle" class="left">Cosmos Demo Store</div>
+                <div id="accountInfo" class="right"><span class="bold">John Pinkerton</span> | <a href="#"><?=$this->translate('MY_ACCOUNT');?></a> | <a href="#" class="logout"><?=$this->translate('LOGOUT');?></a></div>
+            </div>
+            <div id="searchBar">
+                <form id="storeSearch" action="#" method="get">
+                    <table id="searchTable" width="100%">
+                        <tr>
+                            <td id="searchTitle">Search</td>
+                            <td id="searchSelect">
+                                <select id="categorySelect">
+                                    <option>All Categories</option>
+                                    <option>Automotive</option>
+                                    <option>Electronics</option>
+                                    <option>Housewares</option>
+                                </select>
+                            </td>
+                            <td id="searchBox">
+                                <input type="text" id="siteSearch" value="" />
+                            </td>
+                            <td id="searchButton">
+                                <input type="submit" id="searchGo" value="" />
+                            </td>
+                            <td id="cartButton">
+                                <a href="#" class="button green">
+                                    <span class="myCart">My Cart [10]</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div id="navigationBar" class="clearfix">
+                <div id="leftNavTitle">Shop by Category</div>
+                <ul id="topNavigation">
+                    <li><a href="#">Sample Link</a></li>
+                    <li class="navDropdown">
+                        <div class="topNavLink"><span class="arrow">Sample Dropdown</span></div>
+                        <ul class="navDropdownList hidden">
+                            <li><a href="#">Sub Nav Link</a></li>
+                            <li><a href="#">Long Sub Nav Link</a></li>
+                            <li><a href="#">Sub Nav Link</a></li>
+                            <li><a href="#">Sub Nav Link</a></li>
+                            <li><a href="#">Even Longer Sub Nav Link</a></li>
+                            <li><a href="#">Sub Nav Link</a></li>
+                            <li><a href="#">The Longest Sub Nav Link EVAR!!!</a></li>
+                        </ul>
+                    </li>
+                    <li class="navDropdown">
+                        <div class="topNavLink"><span class="arrow">Sample Dropdown</span></div>
+                        <ul class="navDropdownList hidden">
+                            <li><a href="#">Sub Nav Link</a></li>
+                            <li><a href="#">Long Sub Nav Link</a></li>
+                            <li><a href="#">Sub Nav Link</a></li>
+                            <li><a href="#">Sub Nav Link</a></li>
+                            <li><a href="#">Even Longer Sub Nav Link</a></li>
+                            <li><a href="#">Sub Nav Link</a></li>
+                            <li><a href="#">The Longest Sub Nav Link EVAR!!!</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sample Link</a></li>
+                    <li><a href="#">Sample Link</a></li>
+                </ul>
+            </div>
+
+            <div id="contentWrapper">
+
+                <div class="colmask leftmenu">
+                    <div class="colright">
+                        <div class="col1wrap">
+                            <div class="col1">
+                                <!-- Column 2 start -->
+                                <h1>Page Title</h1>
+                                <?= $this->layout()->content; ?>
+                                <!-- Column 2 end -->
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <!-- Column 1 start -->
+                            <div id="leftNavigation">
+                                <h2>Automotive</h2>
+                                <ul class="navList">
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                </ul>
+
+                                <h2>Electronics</h2>
+                                <ul class="navList">
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                </ul>
+
+                                <h2>Housewares</h2>
+                                <ul class="navList">
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                    <li><a href="#">Left Nav Link</a></li>
+                                </ul>
+                            </div>
+                            <!-- Column 1 end -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="footerPadding">
+            <div class="left">&copy; <?= date('Y'); ?> &bull; Comapny Name &bull; All Rights Reserved</div>
+            <div class="right">Powered by, <a href="http://www.cosmoscommerce.com">Cosmos Commerce</a></div>
+        </div>
+    </div>
+
+</body>
+</html>
